@@ -1,14 +1,15 @@
-import logo from "./logo.svg";
+import logo from "../src/images/logo.png";
 import "./App.css";
-import Index from "./pages";
-import { BrowserRouter, Router } from "react-router-dom";
 import AppRoute from "./routes/router";
 
 function App() {
   return (
     <>
+      <head>
+        <title>Find Your Movie</title>
+        <link rel="icon" type="image/png" href={logo} />
+      </head>
       <AppRoute />
-      <title>Find Your Movie</title>
     </>
   );
 }
